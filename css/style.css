@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background: silver;
+}
+.wrapper-dark {
+    margin: 0 auto;
+    width: 375px;
+    height: 812px;
+    background: #17171C;
+    border-radius: 20px;
+}
+
+.wrapper-light {
+    margin: 0 auto;
+    width: 375px;
+    height: 812px;
+    background: #F1F2F3;
+    border-radius: 20px;
+}
+
+.theme__block {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 72px;
+    height: 32px;
+    background: #2E2F38;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.switch_theme-dark {
+    left:4px;
+    top: 4px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #4E505F;
+    border-radius: 100%;
+}
+
+.switch_theme-light {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 4px;
+    top: 4px;
+    background: #D2D3DA;
+    border-radius: 100%;
+}
+
+.output__block {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result {
+    background: none;
+    border: none;
+    text-align: right;
+    width: 85%;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+
+}
+
+.output {
+    font-family: 'Work Sans';
+    background: none;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    width: 85%;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+
+    opacity: 0.4;
+}
+
+.calculator_keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.key {
+    width: 71.75px;
+    height: 72px;
+    border-radius: 24px;
+    border: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.function__button-dark {
+    color: white;
+    background: #4B5EFC;
+}
+.number__button-light {
+    color: black;
+    background: white;
+}
+
+.number__button-dark {
+    color: white;
+    background: #2E2F38;
+}
+
+.key:active {
+    border: solid 0.5px orange;
+}
