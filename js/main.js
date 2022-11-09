@@ -16,9 +16,19 @@ keys.forEach((key) => {
             result.value = "";
         }else if (key.innerHTML == "=") {
             output.value = result.value;
-            console.log("Нажато равно");
+        }else if (key.innerHTML.includes("img")) {
+            if(output.value == 'undefined') {
+                output.value = 0;
+            }else {
+                output.value  = output.value.slice(0, -1);
+                result.value = math.evaluate(output.value);
+            }
+            if(result.value == 'undefined') {
+                result.value = 0;
+            }else {
+                
+            }
         }else {
-            console.log(key.innerHTML);
             output.value = output.value += key.innerHTML;
             try{
                 result.value = math.evaluate(output.value);
