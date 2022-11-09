@@ -44,6 +44,7 @@ theme.addEventListener('click', () => {
                 wrapper.classList.add('wrapper-light');
                 result.style = "color: black;";
                 output.style = "color: #000000;";
+                document.querySelector("#back_key").src = "images/back_black.png";
                 
             } else {
                 console.log('test')
@@ -64,6 +65,7 @@ theme.addEventListener('click', () => {
                 wrapper.classList.add('wrapper-dark');
                 result.style = "color: white;";
                 output.style = "color: #FFFFFF;";
+                document.querySelector("#back_key").src = "images/back_white.png";
             } else {
                 console.log('test')
             }
