@@ -38,6 +38,8 @@ theme.addEventListener('click', () => {
                 key.classList.add('number__button-light');
                 switchBut.classList.remove('switch_theme-dark');
                 switchBut.classList.add('switch_theme-light');
+                switchBut.classList.add("switch_dark_anime");
+                switchBut.classList.remove('switch_light_anime');
                 wrapper.classList.remove('wrapper-dark');
                 wrapper.classList.add('wrapper-light');
                 result.style = "color: black;";
@@ -56,6 +58,8 @@ theme.addEventListener('click', () => {
                 key.classList.add('number__button-dark');
                 switchBut.classList.remove('switch_theme-light');
                 switchBut.classList.add('switch_theme-dark');
+                switchBut.classList.add("switch_light_anime");
+                switchBut.classList.remove('switch_dark_anime');
                 wrapper.classList.remove('wrapper-light');
                 wrapper.classList.add('wrapper-dark');
                 result.style = "color: white;";
